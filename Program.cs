@@ -1,20 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-string[] students = { "Аня", "Ярослав", "Вика"};
-int count = 0;
+﻿int[] numbers = { 7, 9, 3, 11, 4};
+int sum = 0;
 
-foreach (string student in students)
+foreach (int number in numbers)
 {
-    Console.WriteLine(student);
-    count++;
+    Console.WriteLine(number);
+    sum += number;
 }
 
-Console.WriteLine($"Всего учеников: {count}");
+Console.WriteLine($"CУмма чисел: {sum}");
 
-int[] points = { 10, 20, 15};
+string[] daysWeek = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
 
-Console.WriteLine("Итоговый массив");
-for (int i = 0; i < points.Length; i++)
+foreach (string day in daysWeek)
 {
-    points[i] = points[i] + 5;
-    Console.WriteLine(points[i]);
+    Console.WriteLine(day + "!");
 }
