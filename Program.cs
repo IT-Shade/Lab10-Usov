@@ -1,22 +1,20 @@
-﻿string subject = "Программирование";
+﻿// See https://aka.ms/new-console-template for more information
+string[] students = { "Аня", "Ярослав", "Вика"};
+int count = 0;
 
-foreach (char letter in subject)
+foreach (string student in students)
 {
-    Console.WriteLine(letter);
+    Console.WriteLine(student);
+    count++;
 }
 
-Console.WriteLine($"Общее количество букв: {subject.Length}");
+Console.WriteLine($"Всего учеников: {count}");
 
-int[] grades = { 4, 5, 3, 5, 4 };
-int sum = 0;
+int[] points = { 10, 20, 15};
 
-foreach (int grade in grades)
+Console.WriteLine("Итоговый массив");
+for (int i = 0; i < points.Length; i++)
 {
-    Console.WriteLine(grade);
-    sum += grade;
+    points[i] = points[i] + 5;
+    Console.WriteLine(points[i]);
 }
-
-double average = (double)sum / grades.Length;
-
-Console.WriteLine($"Сумма всех оценок: {sum}");
-Console.WriteLine($"Средний балл: {average}");
